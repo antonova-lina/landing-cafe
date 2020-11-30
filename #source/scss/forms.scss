@@ -73,9 +73,15 @@
 //<INPUT (inp+tab)>====================================================================================================
 input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .input{
+	color:#959595;
+	font-size:15px;
+	border-radius: 0!important;
 	width: 100%;
 	display: block;
+	height: 50px;
+	padding:0 18px;
 	border: 2px solid #959595;
+	background-color: #252525;
 	&.focus{}
 	&.err{
 		border: 2px solid red;

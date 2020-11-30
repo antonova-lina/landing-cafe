@@ -1,2 +1,17 @@
 footer{}
 //====================================================================================================
+.contact-copyright {
+	padding: 50px 0;
+	&__row {
+		display: flex;
+		text-align: center;
+		align-items: center;
+	}
+	&__column {
+		flex: 0 0 50%;
+		
+	}
+	&__image {
+		max-width: 150px;
+	}
+}

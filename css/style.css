@@ -213,6 +213,21 @@ header {
   justify-content: flex-end;
 }
 
+.contact-copyright {
+  padding: 50px 0;
+}
+.contact-copyright__row {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.contact-copyright__column {
+  flex: 0 0 50%;
+}
+.contact-copyright__image {
+  max-width: 150px;
+}
+
 .private {
   background-color: #000000;
   display: flex;
@@ -335,6 +350,103 @@ header {
   height: 100%;
 }
 
+.why-body {
+  background-color: #ebebeb;
+  padding: 50px 0 0 0;
+}
+.why-body__row {
+  display: flex;
+}
+.why-body__column {
+  flex: 0 0 50%;
+  padding-bottom: 50px;
+}
+
+.why-body-item {
+  display: flex;
+}
+.why-body-item__icon {
+  display: flex;
+  min-width: 100px;
+  max-height: 100px;
+  background-color: #000;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-body-item-body {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.why-body-item-body__text {
+  font-size: 15px;
+  line-height: 25px;
+}
+.why-body-item-body__title {
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+.contact-title {
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-top: 75px;
+  padding-bottom: 25px;
+}
+
+.contact-body__row {
+  display: flex;
+}
+.contact-body__column {
+  flex: 0 0 50%;
+  display: flex;
+  padding-bottom: 25px;
+  padding-right: 10px;
+}
+.contact-body__img {
+  padding-right: 10px;
+}
+.contact-body__text {
+  line-height: 25px;
+}
+.contact-body__icon {
+  margin-right: 20px;
+}
+
+.contact-bottom {
+  background-color: #000;
+  display: flex;
+}
+.contact-bottom__column {
+  flex: 0 0 50%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.contact-bottom-form {
+  padding: 50px 50px 0 50px;
+  max-width: 375px;
+}
+.contact-bottom-form__title {
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+.contact-bottom-form__line {
+  margin-bottom: 25px;
+}
 .form-row {
   display: flex;
   font-size: 0;
@@ -452,9 +564,15 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 .input {
+  color: #959595;
+  font-size: 15px;
+  border-radius: 0 !important;
   width: 100%;
   display: block;
+  height: 50px;
+  padding: 0 18px;
   border: 2px solid #959595;
+  background-color: #252525;
 }
 .input.err {
   border: 2px solid red;

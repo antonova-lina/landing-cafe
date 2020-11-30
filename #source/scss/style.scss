@@ -235,22 +235,113 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	}
 	&__image {
 		height: 100%;
+
 	}
 }
 .ibg {
 }
 .why-body {
-	&__column {}
+	background-color: #ebebeb;
+	padding: 50px 0 0 0;
+	&__row {
+		display:flex;
+	}
+	&__column {
+		flex: 0 0 50%;
+		padding-bottom: 50px;
+	}
 }
 .why-body-item {
-	&__icon {}
+	display:flex;
+	&__icon {
+		display:flex;
+		min-width: 100px;
+		max-height: 100px;
+		background-color: #000;
+		padding: 10px 0;
+		align-items:center;
+		justify-content:center;
+	}
 }
 .why-body-item-body {
-	&__text {}
+	padding-left: 15px;
+	padding-right: 10px;
+	&__text {
+		font-size: 15px;
+		line-height: 25px;
+
+	}
+	&__title {
+		font-family: "AkzidenzGroteskBQCondensedBold";
+		font-size: 25px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		height: 40px;
+		padding-bottom: 10px;
+	}
 }
-.why-body-item-boty {
-	&__title {}
+
+//============================================
+.contact {
 }
+.contact-title {
+	font-family: "AkzidenzGroteskBQCondensedBold";
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+.contact-body {
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 0 0 50%;
+		display: flex;
+		padding-bottom: 25px;
+		padding-right: 10px;
+	}
+	&__img {
+		padding-right: 10px;
+	}
+	&__text {
+		line-height: 25px;
+	}
+	&__icon {
+		margin-right: 20px;
+	}
+}
+
+.contact-bottom {
+	background-color: #000;
+	display: flex;
+	&__column {
+		flex: 0 0 50%;
+	}
+}
+iframe{
+	max-width: 100%;
+}
+.contact-bottom-form {
+	padding: 50px 50px 0 50px;
+	max-width: 375px;
+	&__title {
+		font-family: "AkzidenzGroteskBQCondensedBold";
+		font-size: 25px;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: 2px;
+		margin-bottom: 25px;
+	}
+	&__body {}
+	&__line {
+		margin-bottom: 25px;
+	}
+	&__btn {}
+}
+
+
 
 //</ОСНОВНОЙ БЛОК>
 

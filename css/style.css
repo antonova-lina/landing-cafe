@@ -417,7 +417,7 @@ header {
   line-height: 25px;
 }
 .contact-body__icon {
-  margin-right: 20px;
+  margin-right: 28px;
 }
 
 .contact-bottom {
@@ -427,9 +427,8 @@ header {
 .contact-bottom__column {
   flex: 0 0 50%;
 }
-
-iframe {
-  max-width: 100%;
+.contact-bottom__map {
+  height: 100%;
 }
 
 .contact-bottom-form {

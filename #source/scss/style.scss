@@ -43,7 +43,7 @@ $minwidth:320px;
 $mw:880;
 $md1:$mw+12;
 $md2:767.98;
-$md3:767.98;
+$md3:620;
 $md4:479.98;
 //</ПЕРЕМЕННЫЕ>
 
@@ -112,6 +112,24 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	&__columns {
 		flex:0 0 50%;
 	}
+	@media (max-width:$md2+px){
+		margin-bottom: 25px;
+		&__columns:first-child{
+				flex-basis:35%;
+		}
+		&__columns:last-child{
+				flex-basis:65%;
+		}
+	}
+	@media (max-width:$md4+px){
+		&__columns{
+				flex:1 1 100%;
+		}
+		&__columns:first-child{
+				display: none;
+		}
+		
+	}
 }
 
 .private-body {
@@ -136,6 +154,32 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		margin-bottom: 52px;
 
 	}
+	@media (max-width:$md2+px){
+		max-width: 90%;
+		margin-left: 25px;
+		padding: 25px 15px 25px 15px;
+		&__title {
+			font-size: 30px;
+			margin-bottom: 15px;
+			line-height: 30px;
+		}
+		&__text {
+			margin-bottom: 20px;
+		}
+	
+	}
+	@media (max-width:$md4+px){
+		max-width: 90%;
+		padding: 25px 15px 25px 15px;
+		&__title {
+			font-size: 25px;
+			margin-bottom: 15px;
+			line-height: 25px;
+		}
+		&__text {
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .private-body-buttons {
@@ -148,6 +192,11 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		padding:14px 14px 14px;
+	}
+	@media (max-width:$md4+px){
+		&__link {
+			padding:10px 5px;
+		}
 	}
 }
 
@@ -162,6 +211,22 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		flex:0 0 25%;
 	}
 	margin-bottom: 45px;
+	@media (max-width:$md2+px){
+		margin-bottom: 10px;
+	}
+	@media (max-width:$md3+px){
+		&__row {
+			flex-wrap:wrap;
+		}
+		&__columns {
+			flex:0 0 50%;
+		}
+	}
+	@media (max-width:$md4+px){
+		&__columns {
+			flex:1 1 100%;
+		}
+	}
 }
 
 .products-item {
@@ -212,6 +277,27 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		padding:14px 0px 14px;
 		margin-bottom: 40px;
 	}
+	@media (max-width:$md2+px){
+		&__image {}
+		&__title {
+			font-size: 20px;
+			line-height: 20px;
+			height: 30px;
+			max-width: none;
+			margin-bottom: 15px;
+		}
+		&__text {
+			font-size: 14px;
+			margin-bottom: 20px;
+			max-width: none;
+		}
+		&__buttons {
+			margin-bottom: 0px;
+		}
+		&__link {
+			margin-bottom: 15px;
+		}
+	}
 }
 .ibg {
 }
@@ -237,6 +323,19 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		height: 100%;
 
 	}
+	@media (max-width:$md2+px){
+		&__column{
+				flex:1 1 100%;
+		}
+		&__column:last-child{
+				display: none;
+		}
+		&__text {
+			text-align: left;
+			margin-left: 25px;
+			padding: 25px 15px;
+		}
+	}
 }
 .ibg {
 }
@@ -249,6 +348,15 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	&__column {
 		flex: 0 0 50%;
 		padding-bottom: 50px;
+	}
+	@media (max-width:550px){
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+			padding-bottom: 25px;
+		}
 	}
 }
 .why-body-item {
@@ -279,6 +387,12 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		height: 40px;
 		padding-bottom: 10px;
 	}
+	@media (max-width:895px){
+		&__title {
+			font-size: 20px;
+		}
+	}
+	
 }
 
 //============================================
@@ -291,6 +405,10 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	letter-spacing: 5px;
 	padding-top: 75px;
 	padding-bottom: 25px;
+
+	@media (max-width:895px){
+		padding-top: 25px;
+	}
 }
 .contact-body {
 	&__row {
@@ -311,6 +429,14 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	&__icon {
 		margin-right: 28px;
 	}
+	@media (max-width:$md3+px){
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+		}
+	}
 }
 
 .contact-bottom {
@@ -321,6 +447,17 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	}
 	&__map{
 		height: 100%;
+	}
+	@media (max-width:$md3+px){
+		flex-wrap: wrap;
+		&__column {
+			flex: 0 0 100%;
+		}
+	}
+	@media (max-width:$md3+px){
+		&__map{
+			height: 300px;
+		}
 	}
 }
 
@@ -340,6 +477,12 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 		margin-bottom: 25px;
 	}
 	&__btn {}
+	@media (max-width:$md3+px){
+		max-width: none;
+	}
+	@media (max-width:$md3+px){
+		padding: 25px 10px 0 25px;
+	}
 }
 
 

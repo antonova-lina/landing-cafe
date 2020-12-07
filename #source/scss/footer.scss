@@ -6,6 +6,7 @@ footer{}
 		display: flex;
 		text-align: center;
 		align-items: center;
+		//justify-content: space-between;
 	}
 	&__column {
 		flex: 0 0 50%;
@@ -14,4 +15,18 @@ footer{}
 	&__image {
 		max-width: 150px;
 	}
+	@media (max-width:$md3+px){
+		padding: 10px 0;
+		&__row {
+			flex-direction: column-reverse;
+		}
+		&__column {
+			flex: 1 1 100%;
+			padding: 10px 0;
+		}
+	}
+}
+.contact-copyright__column a{
+	text-decoration: underline;
+	color: #595950;
 }
